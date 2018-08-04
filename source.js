@@ -2,9 +2,10 @@ console.log("js check")
 // validator 
 
 var slider = document.querySelector('input[name=salary]');
+var output = document.querySelector('span[name=salaryValue]');
 console.log (slider.value);
-slider.oniput = function() {
-	console.log (slider.value);
+slider.oninput = function() {
+	output.textContent = slider.value;
 }
 
 $('form').submit(function(event){
