@@ -4,6 +4,7 @@ console.log("js check")
 var slider = document.querySelector('input[name=salary]');
 var output = document.querySelector('span[name=salaryValue]');
 console.log (slider.value);
+$( "checkbox" ).prop('checked' , true);
 slider.oninput = function() {
 	output.textContent = slider.value;
 }
@@ -16,15 +17,20 @@ $('form input[type=submit]').click(function(){
 	validation();
 });
 
+
+
 function validation(){	
 var name = document.querySelector('input[name=name]').value;
 var country = document.querySelector('select[name=country]').value;
-var gender = document.querySelector('input[name=gender]').value;
+var male = document.querySelector('input[id=male]').checked;
+var female = document.querySelector('input[id=female]').checked;
 var salary = document.querySelector('input[name=salary]').value;
-var accept = document.querySelector('input[name=accept]').value;
+var accept = document.querySelector('input[name=accept]').checked;
+
 console.log (name);
 console.log (country);
-console.log (gender);
+console.log ("Male " + male);
+console.log ("Female " + female);
 console.log (salary);
-console.log (accept);
+console.log (accept)
 }
