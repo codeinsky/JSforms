@@ -27,10 +27,18 @@ var female = document.querySelector('input[id=female]').checked;
 var salary = document.querySelector('input[name=salary]').value;
 var accept = document.querySelector('input[name=accept]').checked;
 
-console.log (name);
-console.log (country);
-console.log ("Male " + male);
-console.log ("Female " + female);
-console.log (salary);
-console.log (accept)
+
+// console.log (country);
+// console.log ("Male " + male);
+// console.log ("Female " + female);
+// console.log (salary);
+// console.log (accept)
+
+if (name[0]===name[0].toUpperCase()){
+	console.log ("name is Fine");
+}
+else {
+	console.log("name is wrong")
+}
+
 }
